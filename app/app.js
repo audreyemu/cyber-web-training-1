@@ -25,6 +25,11 @@ app.get("/challenge/:word", (req, res) => {
   }
 });
 
+// define /flag route
+app.get("/flag", (req, res) => {
+  res.send("Here is the flag!");
+});
+
 // listen for requests
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
