@@ -27,7 +27,6 @@ app.get("/challenge/:word", (req, res) => {
 
 // define /flag route
 app.get("/flag", (req, res) => {
-  res.send("Here is the flag!");
   res.send("flag{lego_person_is_cool}");
 });
 
